@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Login Page</title>
+<style>
+    body {
+        background: #dae0e6 !important;
+        margin-top: 75px !important;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+<style> 
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    p1 {
+        font-size: 10px;
+        text-align: center;
+    }
+</style>
+
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+        </div>
+        <div class="col">
+            <div class="alert alert-primary" role="alert">
+                Login
+            </div>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    
+    <div class="row align-items-start">
+      <div class="col">
+      </div>
+      <div class="col">
+        <form class="form" actions="/login" method="POST">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Log me in</button>
+                <p1>Don't have an account? Sign up here </p1>
+            </div>
+        </form>
+    </div>
+      <div class="col">
+      </div>
+</div>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light style=" style="background-color: #fff !important;">
+    <div class="container">
+        <a class="navbar-brand" href="/">FlaskReddit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+{% endblock %}

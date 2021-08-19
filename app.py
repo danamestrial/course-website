@@ -18,6 +18,10 @@ class User(db.Model):
 def index():
     return render_template('index.html')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
+
 @app.route('/signup')
 def signup():
     return render_template('Signup.html')
