@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+    body {
+        background: #dae0e6 !important;
+        margin-top: 75px !important;
+    }
+</style>
+<div class="container">
+    <div class="row">
+      <div class="col align-self-start">
+      </div>
+      <div class="col align-self-center">
+        <div class="alert alert-dark" role="alert">
+            SIGN UP
+        </div>
+      </div>
+      <div class="col align-self-end">
+      </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light style=" style="background-color: #fff !important;">
+    <div class="container">
+        <a class="navbar-brand" href="/">FlaskReddit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+      <div class="col align-self-start">
+      </div>
+      <div class="col align-self-center">
+        <div class="mb-3">
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" name="first_name" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" name="last_name" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+          </div>
+
+        <form>
+            <div class="mb-3">
+                <div class="col-12">
+                    <label for="inputUsername" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username" id="inputUsername">
+                    </div>
+                </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+              <div id="emailHelp" class="form-text">Must be at least 8 characters long.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Re-type password</label>
+                <input type="password" class="form-control" name="re_password" id="exampleInputPassword1">
+                <div id="emailHelp" class="form-text">Must be at least 8 characters long.</div>
+              </div>
+            <button type="submit" class="btn btn-primary">SignUp</button>
+          </form>
+      </div>
+      <div class="col align-self-end">
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
